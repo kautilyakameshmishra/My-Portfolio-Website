@@ -1,3 +1,7 @@
+document.getElementById('reload-link').addEventListener('click', function() {
+  window.location.href = './index.html'; // Replace 'project.html' with the actual path to your project.html file
+});
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
