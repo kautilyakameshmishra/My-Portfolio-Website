@@ -2,6 +2,14 @@ document.getElementById('reload-link').addEventListener('click', function() {
   window.location.href = './index.html'; // Replace 'project.html' with the actual path to your project.html file
 });
 
+document.getElementById('reload-link-hamburger').addEventListener('click', function() {
+  window.location.href = './index.html';
+});
+
+function navigateToProjectPage() {
+  window.location.href = './project.html#mini-projects';
+}
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");

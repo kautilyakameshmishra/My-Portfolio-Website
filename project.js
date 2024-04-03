@@ -1,10 +1,16 @@
 document.getElementById('reload-link').addEventListener('click', function() {
-    window.location.href = './index.html'; // Replace 'project.html' with the actual path to your project.html file
-});
+    window.location.href = './project.html'; // Replace 'project.html' with the actual path to your project.html file
+  });
 
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+const modeToggle = document.getElementById('modeToggle');
 const body = document.body;
 
-darkModeToggle.addEventListener('click', () => {
+modeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
+    const isDarkMode = body.classList.contains('dark-mode');
+    if (isDarkMode) {
+        modeToggle.src = modeToggle.getAttribute('src-dark');
+    } else {
+        modeToggle.src = modeToggle.getAttribute('src-light');
+    }
 });

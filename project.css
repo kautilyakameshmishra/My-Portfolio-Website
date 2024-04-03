@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -24,7 +25,7 @@ header {
     width: 100%;
 }
 
-button {
+/* button {
     padding: 1rem;
     width: 8rem;
     font-size: medium;
@@ -43,6 +44,11 @@ button:hover {
 
 button:focus {
     outline: none;
+} */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
 }
 
 
@@ -61,10 +67,11 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    margin-right: 15px;
+    margin-right: 2rem;
 }
 
 nav ul li:last-child {
@@ -203,8 +210,8 @@ footer {
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #000; 
-    color: #fff; 
+    background-color: #000;
+    color: #fff;
 }
 
 .dark-mode header {
@@ -214,63 +221,103 @@ footer {
 }
 
 .dark-mode button {
-    background-color: black; 
-    color: #fff; 
-    border: #777 0.1rem solid; 
+    background-color: black;
+    color: #fff;
+    border: #777 0.1rem solid;
 }
 
 .dark-mode button:hover {
-    background-color: white; 
+    background-color: white;
     color: black;
 }
 
 .dark-mode nav ul li a {
-    color: #fff; 
+    color: #fff;
 }
 
 .dark-mode .container h2 {
-    color: #fff; 
+    color: #fff;
 }
 
 .dark-mode .project {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .project:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode .button.demo,
 .dark-mode .button.github {
-    border: #777 0.1rem solid; 
+    border: #777 0.1rem solid;
 }
 
 .dark-mode .button.github {
     background: none;
-    color: #fff; 
+    color: #fff;
 }
 
 .dark-mode .button.demo,
 .dark-mode .button.github:hover {
-    background: white; 
-    color: black; 
+    background: white;
+    color: black;
 }
 
 .dark-mode .button.demo:hover {
-    background: #000; 
+    background: #000;
     color: white;
 }
 
 .dark-mode .button.github:hover {
-    background: white; 
+    background: white;
     color: black;
 }
 
 .dark-mode footer {
-    background-color: #000; 
-    color: #fff; 
+    background-color: #000;
+    color: #fff;
 }
 
 .dark-mode .social-icons a img {
-    filter: invert(1); 
+    filter: invert(1);
 }
+
+@media only screen and (max-width: 768px) {
+    /* header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    } */
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    nav ul li {
+      margin-right: 1rem;
+    }
+
+    nav ul li:nth-child(1),
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3) {
+        display: none;
+      }
+   
+    .container h2 {
+      font-size: 24px;
+    }
+
+    .project-info h3 {
+      font-size: 18px;
+    }
+  
+    .project-info p {
+      font-size: 14px;
+    }
+  
+    .button {
+      padding: 0.8rem;
+      width: 7rem;
+    }
+  
+  }
+  
