@@ -135,11 +135,13 @@ nav a:hover {
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .hamburger-icon {
@@ -149,6 +151,7 @@ nav a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .hamburger-icon span {
@@ -181,10 +184,12 @@ nav a:hover {
 
 .menu-links li {
   list-style: none;
+  transition: background-color 0.3s ease;
 }
 
 .menu-links.open {
   max-height: fit-content;
+  transition: background-color 0.3s ease;
 }
 
 .hamburger-icon.open span:first-child {
@@ -232,6 +237,7 @@ section {
 
 .section-container {
   display: flex;
+  transition: background-color 0.3s ease;
 }
 
 /* PROFILE SECTION */
@@ -355,16 +361,19 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  transition: background-color 0.3s ease;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  transition: background-color 0.3s ease;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
+  transition: background-color 0.3s ease;
 }
 
 .about-pic {
@@ -379,11 +388,13 @@ section {
   border: var(--button-border);
   border-color: var(--container-border);
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .section-container {
   gap: 4rem;
   height: 80%;
+  transition: background-color 0.3s ease;
 }
 
 .section__pic-container {
@@ -394,6 +405,7 @@ section {
 
 .text-container p {
   margin-bottom: 1em;
+  transition: background-color 0.3s ease;
 }
 
 /* SKILLS SECTION */
@@ -407,12 +419,14 @@ section {
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .skills-details-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .article-container {
@@ -424,6 +438,7 @@ section {
   justify-content: space-around;
   max-width: 80%;
   margin: 0 auto;
+  transition: background-color 0.3s ease;
 }
 
 article {
@@ -444,6 +459,7 @@ article .icon {
   cursor: default;
   width: 20px;
   height: auto;
+  transition: background-color 0.3s ease;
 }
 
 /* PROJECTS SECTION */
@@ -455,7 +471,7 @@ article .icon {
 .color-container {
   border-color: var(--container-border);
   background: var(--primary-color);
-  transition: transform 0.3s ease; /* Smooth transform transition */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .project-img {
@@ -503,6 +519,7 @@ article .icon {
   background: var(--background-color);
   margin: 2rem auto;
   padding: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .contact-info-container {
@@ -511,18 +528,17 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .contact-info-container p {
   font-size: larger;
+  transition: background-color 0.3s ease;
 }
 
 .contact-icon {
   cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
+  transition: background-color 0.3s ease;
 }
 
 /* FOOTER SECTION */
