@@ -5,7 +5,7 @@
 /* Default Light Mode */
 :root {
   --primary-color: white;
-  --primary-color-2: #fafafa;
+  /* --primary-color-2: #fafafa; */
   --primary-color-3: #b5b5b5;
   --background-color: #ffffff;
   --secondary-color: #000000;
@@ -20,7 +20,7 @@
 /* Dark Mode */
 [theme="dark"] {
   --primary-color: #000000;
-  --primary-color-2: #0a0a0a;
+  /* --primary-color-2: #0a0a0a; */
   --primary-color-3: #141414;
   --background-color: #000000;
   --secondary-color: #ffffff;
@@ -39,11 +39,13 @@
 
 h3 {
   color: var(--secondary-color);
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
+  transition: background-color 0.3s ease;
 }
 
 html {
@@ -52,6 +54,7 @@ html {
 
 p {
   color: var(--secondary-color-2);
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 /* TRANSITION */
@@ -68,6 +71,7 @@ a,
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 nav,
@@ -115,6 +119,7 @@ nav a:hover {
 .logo {
   font-size: 2rem;
   color: var(--secondary-color);
+  transition: color 0.3s ease;
 }
 
 .logo:hover {
@@ -221,6 +226,7 @@ section {
   margin: 0 10rem;
   margin-bottom: 4rem;
   box-sizing: border-box;
+  transition: margin 0.3s ease; /* Smooth margin transition */
 }
 
 
@@ -368,7 +374,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: var(--primary-color-2);
+  background: var(--primary-color);
   border-radius: 2rem;
   border: var(--button-border);
   border-color: var(--container-border);
@@ -427,6 +433,11 @@ article {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
 }
 
 article .icon {
@@ -443,7 +454,8 @@ article .icon {
 
 .color-container {
   border-color: var(--container-border);
-  background: var(--primary-color-2);
+  background: var(--primary-color);
+  transition: transform 0.3s ease; /* Smooth transform transition */
 }
 
 .project-img {
@@ -452,9 +464,14 @@ article .icon {
   height: 90%;
 }
 
+.color-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
 .project-title {
   margin: 1rem;
   color: var(--secondary-color);
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .project-btn {
