@@ -113,15 +113,15 @@ nav ul li a:hover {
 
 .project {
     overflow: hidden;
-    border-radius: 2rem;
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+    border-radius: 2rem; /* Slightly reduced border radius for a modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adjusted shadow for 3D effect */
     margin-bottom: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px); /* Slightly reduced translateY for a more subtle hover effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Adjusted shadow on hover */
 }
 
 .project img {
@@ -253,14 +253,13 @@ footer {
 
 .dark-mode .project {
     border-radius: 2rem;
-    background-color: #000;
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
 }
 
 .dark-mode .project:hover {
-    transform: translateY(-15px); /* Keep the same transformation on hover */
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0.8); /* Adjusted shadow color for dark mode on hover */
+    transform: translateY(-10px); /* Keep the same transformation on hover */
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.25);
 }
 
 
