@@ -253,13 +253,15 @@ footer {
 
 .dark-mode .project {
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+    background-color: #101010;
+    border: 1px solid #000;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .dark-mode .project:hover {
     transform: translateY(-10px); /* Keep the same transformation on hover */
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
 }
 
 
