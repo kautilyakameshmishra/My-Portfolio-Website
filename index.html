@@ -1,417 +1,2051 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kautilya's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <meta charset="UTF-8">
+  <title>Kautilya Mishra | Quality Analyst Portfolio</title>
+  <meta name="description"
+    content="Kautilya Mishra — Quality Analyst specializing in Manual, Functional, and Regression Testing with 2,000+ defects logged and near-zero post-release defects.">
+  <meta name="keywords"
+    content="Quality Analyst, Manual Testing, Functional Testing, Regression Testing, QA Engineer, Azure DevOps, JIRA, Test Cases, Defect Tracking, QA Portfolio, Jabalpur">
+  <meta name="author" content="Kautilya Mishra">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e1117">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://kautilyamishra.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kautilya Mishra | Quality Analyst Portfolio">
+  <meta property="og:description"
+    content="Manual QA specialist with 2000+ defects logged and near-zero post-release defects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kautilyamishra.netlify.app/">
+  <meta property="og:image" content="https://kautilyamishra.netlify.app/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kautilya Mishra | Quality Analyst Portfolio">
+  <meta name="twitter:description"
+    content="Manual QA specialist with 2000+ defects logged and near-zero post-release defects.">
+  <meta name="twitter:image" content="https://kautilyamishra.dev/og-preview.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kautilya Mishra",
+    "jobTitle": "Quality Analyst",
+    "description": "Manual QA specialist with 2000+ defects logged and near-zero post-release defects.",
+    "email": "kautilyamishra13@outlook.com",
+    "telephone": "+919424860726",
+    "url": "https://kautilyamishra.dev",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jabalpur",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/kautilya-mishra/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Baderia Global Institute of Engineering & Management"
+    },
+    "knowsAbout": ["Manual Testing", "Functional Testing", "Regression Testing", "Azure DevOps", "JIRA", "UAT", "QA Engineering"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #0e1117;
+      --paper: #f5f2ec;
+      --accent: #c8410a;
+      --accent2: #1a4d7c;
+      --muted: #6b6460;
+      --border: #d8d3ca;
+      --card: #fffcf7;
+      --mono: 'DM Mono', monospace;
+      --serif: 'DM Serif Display', serif;
+      --sans: 'Syne', sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 3rem;
+      backdrop-filter: blur(12px);
+      background: rgba(245, 242, 236, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      text-decoration: none;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-badge {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.25rem 0.6rem;
+      letter-spacing: 0.06em;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 4px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--ink);
+      transition: all 0.3s ease;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: rgba(245, 242, 236, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem;
+      z-index: 99;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: none;
+    }
+
+    .mobile-nav a:hover {
+      color: var(--accent);
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 3rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 38ch;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .stat-num span {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 0.85rem 2rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      border: 1.5px solid var(--border);
+      color: var(--ink);
+      padding: 0.85rem 2rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .hero-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-visual {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .qa-card {
+      position: absolute;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1rem 1.2rem;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--muted);
+      animation: float 6s ease-in-out infinite;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .qa-card .card-label {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .qa-card .card-value {
+      font-size: 1.4rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .qa-card.c1 {
+      top: 20%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .qa-card.c2 {
+      top: 15%;
+      right: 15%;
+      animation-delay: 1s;
+    }
+
+    .qa-card.c3 {
+      top: 48%;
+      left: 5%;
+      animation-delay: 2s;
+    }
+
+    .qa-card.c4 {
+      top: 55%;
+      right: 10%;
+      animation-delay: 0.5s;
+    }
+
+    .qa-card.c5 {
+      top: 75%;
+      left: 25%;
+      animation-delay: 1.5s;
+    }
+
+    .qa-card.c6 {
+      top: 30%;
+      left: 40%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-10px)
+      }
+    }
+
+    .big-bg-text {
+      position: absolute;
+      bottom: -2rem;
+      right: -1rem;
+      font-family: var(--serif);
+      font-size: 14rem;
+      color: rgba(0, 0, 0, 0.03);
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+      letter-spacing: -0.05em;
+    }
+
+    /* ─── SECTION COMMON ─── */
+    section {
+      padding: 6rem 3rem;
+    }
+
+    .section-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 3rem;
+    }
+
+    h2 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* ─── ABOUT ─── */
+    .about {
+      background: var(--ink);
+      color: var(--paper);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about h2 {
+      color: var(--paper);
+    }
+
+    .about h2 em {
+      color: #e8843a;
+    }
+
+    .about .section-eyebrow {
+      color: #e8843a;
+    }
+
+    .about .section-eyebrow::before {
+      background: #e8843a;
+    }
+
+    .about-text p {
+      color: rgba(245, 242, 236, 0.7);
+      line-height: 1.8;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .about-item {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .about-item:hover {
+      border-color: #e8843a;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .about-item-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .about-item-title {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #e8843a;
+      margin-bottom: 0.3rem;
+    }
+
+    .about-item-text {
+      font-size: 0.88rem;
+      color: rgba(245, 242, 236, 0.65);
+      line-height: 1.5;
+    }
+
+    /* ─── SKILLS ─── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 4rem;
+    }
+
+    .skill-cell {
+      background: var(--card);
+      padding: 2rem;
+      transition: background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-cell::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .skill-cell:hover::after {
+      width: 100%;
+    }
+
+    .skill-cell:hover {
+      background: var(--paper);
+    }
+
+    .skill-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .skill-name {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .skill-tag {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--muted);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .tool-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1.5px solid var(--border);
+      padding: 0.5rem 1rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--ink);
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+      background: var(--card);
+    }
+
+    .tool-pill:hover {
+      border-color: var(--accent2);
+      color: var(--accent2);
+      transform: translateY(-3px);
+    }
+
+    .tool-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ─── EXPERIENCE ─── */
+    .experience {
+      background: var(--paper);
+    }
+
+    .exp-timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .exp-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--accent), var(--border));
+    }
+
+    .exp-item {
+      position: relative;
+      margin-bottom: 3.5rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .exp-dot {
+      position: absolute;
+      left: -2.35rem;
+      top: 0.4rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--paper);
+      box-shadow: 0 0 0 3px var(--accent);
+    }
+
+    .exp-meta {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-meta span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .exp-title {
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+    }
+
+    .exp-company {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent2);
+      margin-bottom: 1.2rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--muted);
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.75rem;
+      top: 0.1rem;
+    }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+    }
+
+    .exp-tag {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      color: var(--accent2);
+      background: rgba(26, 77, 124, 0.07);
+      border: 1px solid rgba(26, 77, 124, 0.2);
+      padding: 0.2rem 0.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── RESUME SECTION ─── */
+    .resume-section {
+      background: var(--ink);
+    }
+
+    .resume-section h2 {
+      color: var(--paper);
+    }
+
+    .resume-section h2 em {
+      color: #e8843a;
+    }
+
+    .resume-section .section-eyebrow {
+      color: #e8843a;
+    }
+
+    .resume-section .section-eyebrow::before {
+      background: #e8843a;
+    }
+
+    .resume-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .resume-preview {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.02);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .resume-preview-header {
+      background: rgba(200, 65, 10, 0.12);
+      border-bottom: 1px solid rgba(200, 65, 10, 0.25);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .resume-preview-title {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #e8843a;
+    }
+
+    .resume-preview-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .resume-preview-dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .resume-doc {
+      padding: 1.5rem;
+      font-family: var(--mono);
+    }
+
+    .rdoc-name {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--paper);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.2rem;
+    }
+
+    .rdoc-role {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: #e8843a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .rdoc-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .rdoc-contact-item {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: rgba(245, 242, 236, 0.5);
+      letter-spacing: 0.04em;
+    }
+
+    .rdoc-contact-item::after {
+      content: ' ·';
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .rdoc-contact-item:last-child::after {
+      content: '';
+    }
+
+    .rdoc-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin-bottom: 1rem;
+    }
+
+    .rdoc-section-head {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #e8843a;
+      margin-bottom: 0.6rem;
+    }
+
+    .rdoc-exp-item {
+      margin-bottom: 0.8rem;
+    }
+
+    .rdoc-exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+
+    .rdoc-exp-role {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--paper);
+    }
+
+    .rdoc-exp-date {
+      font-size: 0.6rem;
+      color: rgba(245, 242, 236, 0.4);
+    }
+
+    .rdoc-exp-company {
+      font-size: 0.65rem;
+      color: rgba(245, 242, 236, 0.55);
+      margin-bottom: 0.3rem;
+    }
+
+    .rdoc-exp-bullet {
+      font-size: 0.6rem;
+      color: rgba(245, 242, 236, 0.4);
+      line-height: 1.5;
+      padding-left: 0.8rem;
+      position: relative;
+      margin-bottom: 0.1rem;
+    }
+
+    .rdoc-exp-bullet::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #e8843a;
+    }
+
+    .rdoc-skills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .rdoc-skill-tag {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: rgba(245, 242, 236, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.15rem 0.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    .resume-actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .resume-actions-title {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--paper);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .resume-actions-desc {
+      font-size: 0.9rem;
+      color: rgba(245, 242, 236, 0.6);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .resume-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+      cursor: pointer;
+      background: transparent;
+      width: 100%;
+      text-align: left;
+    }
+
+    .resume-btn:hover {
+      border-color: #e8843a;
+      background: rgba(255, 255, 255, 0.03);
+      transform: translateX(6px);
+    }
+
+    .resume-btn-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .resume-btn-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(245, 242, 236, 0.4);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .resume-btn-text {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--paper);
+    }
+
+    .resume-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: 1.5rem;
+    }
+
+    .resume-stat {
+      padding: 1rem;
+      background: var(--ink);
+      text-align: center;
+    }
+
+    .resume-stat-num {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: #e8843a;
+      line-height: 1;
+    }
+
+    .resume-stat-lbl {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: rgba(245, 242, 236, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 0.3rem;
+    }
+
+    /* ─── ACHIEVEMENTS ─── */
+    .achievements {
+      background: var(--ink);
+    }
+
+    .achievements h2 {
+      color: var(--paper);
+    }
+
+    .achievements h2 em {
+      color: #e8843a;
+    }
+
+    .achievements .section-eyebrow {
+      color: #e8843a;
+    }
+
+    .achievements .section-eyebrow::before {
+      background: #e8843a;
+    }
+
+    .ach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .ach-card {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .ach-card:hover {
+      border-color: #e8843a;
+      transform: translateY(-4px);
+    }
+
+    .ach-num {
+      font-family: var(--serif);
+      font-size: 3rem;
+      color: #e8843a;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .ach-label {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--paper);
+      margin-bottom: 0.5rem;
+    }
+
+    .ach-desc {
+      font-size: 0.83rem;
+      color: rgba(245, 242, 236, 0.5);
+      line-height: 1.6;
+    }
+
+    .ach-bg-num {
+      position: absolute;
+      bottom: -1rem;
+      right: -0.5rem;
+      font-family: var(--serif);
+      font-size: 6rem;
+      color: rgba(255, 255, 255, 0.03);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact {
+      background: var(--paper);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--card);
+      transition: border-color 0.2s, transform 0.2s, background 0.2s;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+    }
+
+    .contact-link:hover {
+      border-color: var(--accent);
+      transform: translateX(6px);
+      background: var(--paper);
+    }
+
+    .contact-link-icon {
+      font-size: 1.1rem;
+    }
+
+    .contact-link-label {
+      font-size: 0.63rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-form-area {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+    }
+
+    .form-title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      min-height: 100px;
+    }
+
+    .form-submit {
+      width: 100%;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      padding: 0.9rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit:hover {
+      background: var(--accent);
+    }
+
+    .form-submit:disabled {
+      background: var(--muted);
+      cursor: not-allowed;
+    }
+
+    .error {
+      color: #c8410a;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      margin-top: 4px;
+      display: block;
+      min-height: 14px;
+    }
+
+    input.error-border,
+    textarea.error-border {
+      border-color: #c8410a !important;
+    }
+
+    .form-success {
+      display: none;
+      background: rgba(26, 77, 124, 0.07);
+      border: 1px solid rgba(26, 77, 124, 0.2);
+      padding: 1rem 1.2rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--accent2);
+      letter-spacing: 0.04em;
+      margin-top: 1rem;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--ink);
+      color: rgba(245, 242, 236, 0.4);
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer a {
+      color: rgba(245, 242, 236, 0.4);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #e8843a;
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ─── SCREEN READER ONLY ─── */
+    .sr-only {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav {
+        padding: 1rem 1.5rem;
+      }
+
+      .nav-links,
+      .nav-badge {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-right {
+        display: none;
+      }
+
+      .hero-left {
+        padding: 5rem 1.5rem 3rem;
+      }
+
+      section {
+        padding: 4rem 1.5rem;
+      }
+
+      .about,
+      .contact-inner,
+      .resume-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .resume-preview {
+        display: none;
+      }
+
+      .resume-stats-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <nav id="desktop-nav">
-    <div class="logo" id="reload-link">Kautilya Mishra</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
-            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <nav id="hamburger-nav">
-    <div class="logo" id="reload-link-hamburger">Kautilya Mishra</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li>
-          <img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
-            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
-        </li>
-      </div>
-    </div>
-  </nav>
-
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Kautilya Mishra profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Kautilya Mishra</h1>
-      <p class="section__text__p2">Web Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/kautilya-resume.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
-          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
-          onclick="location.href='https://www.linkedin.com/in/74104221b/'" />
-        <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
-          alt="My github profile" class="icon github-icon"
-          onclick="location.href='https://github.com/kautilyakameshmishra'" />
-        <img src="./assets/instagram_light.png" src-light="./assets/instagram_light.png"
-          src-dark="./assets/instagram_dark.png" alt="My Instagram profile" class="icon instagram-icon"
-          onclick="location.href='https://www.instagram.com/kautilyakameshmishra/'" />
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
-              src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>3 Mo. Cybersecurity Intern<br />3 Mo. AWS Cloud Intern</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education_light.png" src-light="./assets/education_light.png"
-              src-dark="./assets/education_dark.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>B.Tech Bachelors Degree<br />Computer Science</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            Hi there! I'm Kautilya Mishra, a dynamic computer science graduate specializing in full-stack web
-            development. I excel in crafting innovative solutions that deliver seamless user experiences.
-          </p>
-          <p>
-            I stay ahead of industry trends
-            and technologies, ensuring relevance and expertise in a rapidly
-            evolving landscape. Explore my portfolio to discover my projects,
-            certifications, and technical skills, reflecting my dedication to
-            innovation and problem-solving.
-          </p>
-          <p>
-            Let's connect and explore
-            opportunities to make a meaningful impact together!
-          </p>
-        </div>
-
-      </div>
-    </div>
-    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-      alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
-  </section>
-
-  <section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="skills-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="skills-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML/CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Bootstrap</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Tailwind CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="skills-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Java</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MySQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Firebase</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>AWS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="skills-sub-title">Tools & Technologies</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git/Github</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Linux</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>VS Code</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
-                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Postman</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-      alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="skills-details-container">
-      <div class="about-containers">
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-snaps/mern-estate.png" alt="MERN-Estate Project" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">MERN-Estate</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/kautilyakameshmishra/MERN-Estate'">
-              GitHub
-            </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kautilyakameshmishra/MERN-Estate'">
-              Live Demo
-            </button> -->
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-snaps/book-hive.png" alt="Book-Hive Project" class="project-img" />
-          </div>
-          <h2 class="skilla-sub-title project-title">Book-Hive</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/kautilyakameshmishra/Book-Hive'">
-              GitHub
-            </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/kautilyakameshmishra/Book-Hive'">
-              Live Demo
-            </button> -->
-          </div>
-        </div>
-
-        <!-- <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-snaps/insight-edge.png" alt="InsightEdge Project" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">InsightEdge</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/kautilyakameshmishra/Insight-EDGE'">
-              GitHub
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div> -->
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-snaps/mini-projects.png" alt="Mini-Projects" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">Mini-Projects</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/kautilyakameshmishra/Mini-Project'">
-              GitHub
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="navigateToProjectPage()">
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="btn btn-color-2 project-btn btn-project-page" onclick="location.href='./project.html'">
-      View All
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">K.<span>M</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-badge">Open to Work</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
+  </nav>
 
-    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-      alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#resume" class="mobile-link">Resume</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
 
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png"
-          alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:kautilyakamesh3@gmail.com">Email</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
-          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
-          onclick="location.href='https://www.linkedin.com/in/74104221b/'" />
-        <p><a href="https://www.linkedin.com/in/74104221b/">LinkedIn</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
-          alt="My Github profile" class="icon Github-icon"
-          onclick="location.href='https://github.com/kautilyakameshmishra'" />
-        <p><a href="https://github.com/kautilyakameshmishra">GitHub</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/instagram_light.png" src-light="./assets/instagram_light.png"
-          src-dark="./assets/instagram_dark.png" alt="My Instagram profile" class="icon instagram"
-          onclick="location.href='https://www.instagram.com/kautilyakameshmishra/'" />
-        <p><a href="https://www.instagram.com/kautilyakameshmishra/">Instagram</a></p>
-      </div>
-    </div>
-  </section>
+  <main>
 
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Quality Analyst — End-to-End Manual QA</div>
+        <h1>Breaking<br>apps <em>before</em><br>users do.</h1>
+        <p class="hero-desc">Manual &amp; functional testing specialist from Jabalpur. I hunt bugs so your customers
+          never
+          have to — 2,000+ defects logged, near-zero post-release defects.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">2k<span>+</span></div>
+            <div class="stat-label">Defects Logged</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">~0</div>
+            <div class="stat-label">Post-Release Defects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">8.25</div>
+            <div class="stat-label">CGPA · B.Tech CSE</div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="#contact" class="btn-ghost">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-visual">
+          <div class="big-bg-text">QA</div>
+          <div class="qa-card c1">
+            <div class="card-label">Defects Found</div>
+            <div class="card-value">2,000+</div>
+          </div>
+          <div class="qa-card c2">
+            <div class="card-label">Tool</div>
+            <div class="card-value">Jira, Azure</div>
+          </div>
+          <div class="qa-card c3">
+            <div class="card-label">Test Type</div>
+            <div class="card-value">System, Regression</div>
+          </div>
+          <div class="qa-card c4">
+            <div class="card-label">Status</div>
+            <div class="card-value" style="color:var(--accent);font-size:1rem">✓ PASS</div>
+          </div>
+          <div class="qa-card c5">
+            <div class="card-label">Post-Release Defects</div>
+            <div class="card-value">Near-zero</div>
+          </div>
+          <div class="qa-card c6">
+            <div class="card-label">Coverage</div>
+            <div class="card-value">5,000+ Test Cases</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-label="About me">
+      <div class="about-text reveal">
+        <div class="section-eyebrow">About Me</div>
+        <h2>Quality is a<br><em>discipline,</em><br>not a checkbox.</h2>
+        <p>I'm Kautilya Mishra, a Quality Analyst based in Jabalpur, Madhya Pradesh. With 1.5+ years across product and
+          enterprise QA — at Logimonk Technologies and QualityKiosk Technologies — I've built a reputation for thorough
+          test coverage, clean defect reporting, and near-zero post-release surprises.</p>
+        <p>I read requirements the way developers write code — looking for gaps, edge cases, and assumptions that could
+          break things later. I believe QA belongs at every stage of the product lifecycle, not just at the end.</p>
+      </div>
+      <div class="about-right reveal">
+        <div class="about-item">
+          <div class="about-item-icon" aria-hidden="true">🔍</div>
+          <div>
+            <div class="about-item-title">Meticulous Tester</div>
+            <div class="about-item-text">I design test cases that cover not just happy paths but edge cases, negative
+              flows, and boundary conditions that developers often miss.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon" aria-hidden="true">📋</div>
+          <div>
+            <div class="about-item-title">Requirement Analyst</div>
+            <div class="about-item-text">Skilled at reading BRDs and FRDs to surface ambiguities before a single line of
+              code is written — preventing costly mid-sprint changes.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon" aria-hidden="true">🤝</div>
+          <div>
+            <div class="about-item-title">Team Collaborator</div>
+            <div class="about-item-text">Comfortable on client calls, product demos, in UAT sessions, and in sprint
+              ceremonies — I bridge QA with developers, BAs, and product owners daily.</div>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon" aria-hidden="true">🎓</div>
+          <div>
+            <div class="about-item-title">Mentor</div>
+            <div class="about-item-text">Reviewed and guided junior QA engineers at Logimonk, improving overall test
+              quality and team consistency.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <div class="section-eyebrow reveal">Core Skills</div>
+      <h2 class="reveal">Built to <em>break</em><br>things, professionally.</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">🧪</div>
+          <div class="skill-name">Testing Types</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Manual</span><span class="skill-tag">Functional</span>
+            <span class="skill-tag">Smoke</span><span class="skill-tag">Sanity</span>
+            <span class="skill-tag">Retesting</span><span class="skill-tag">Regression</span>
+            <span class="skill-tag">Integration</span><span class="skill-tag">UAT</span>
+            <span class="skill-tag">System</span><span class="skill-tag">UI</span>
+            <span class="skill-tag">Usability</span><span class="skill-tag">Compatibility</span>
+            <span class="skill-tag">Exploratory</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">📝</div>
+          <div class="skill-name">Test Management</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Test Planning</span><span class="skill-tag">Test Case Design</span>
+            <span class="skill-tag">Scenario Creation</span><span class="skill-tag">Test Execution</span>
+            <span class="skill-tag">Traceability Matrix</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">🐛</div>
+          <div class="skill-name">Defect Management</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Defect Lifecycle</span><span class="skill-tag">Bug Reporting</span>
+            <span class="skill-tag">Root Cause Analysis</span><span class="skill-tag">Retesting</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">📋</div>
+          <div class="skill-name">Requirement Analysis</div>
+          <div class="skill-tags">
+            <span class="skill-tag">BRD Review</span><span class="skill-tag">FRD Review</span>
+            <span class="skill-tag">User Stories</span><span class="skill-tag">Gap Analysis</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">🤝</div>
+          <div class="skill-name">Collaboration</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Agile / Scrum</span><span class="skill-tag">Client Calls</span>
+            <span class="skill-tag">UAT Support</span><span class="skill-tag">QA Mentoring</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-icon" aria-hidden="true">💻</div>
+          <div class="skill-name">Tools &amp; Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure DevOps</span><span class="skill-tag">JIRA</span>
+            <span class="skill-tag">Git / GitHub</span><span class="skill-tag">Linux</span>
+            <span class="skill-tag">MS Office</span><span class="skill-tag">Figma (UI Review)</span>
+          </div>
+        </div>
+      </div>
+      <div class="tools-row reveal">
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>Azure DevOps</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>JIRA</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>Git</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>GitHub</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>Linux</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>Microsoft Office</div>
+        <div class="tool-pill"><span class="tool-dot" aria-hidden="true"></span>Excel / Sheets</div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience" aria-label="Work experience">
+      <div class="section-eyebrow reveal">Experience</div>
+      <h2 class="reveal">Where I've<br><em>hunted bugs.</em></h2>
+      <div class="exp-timeline">
+        <article class="exp-item reveal">
+          <div class="exp-dot" aria-hidden="true"></div>
+          <div class="exp-meta"><span>Jan 2025 – Jan 2026</span> · Jabalpur, MP</div>
+          <h3 class="exp-title">Quality Analyst</h3>
+          <div class="exp-company">Logimonk Technologies</div>
+          <ul class="exp-bullets">
+            <li>Led end-to-end QA — sole reviewer and final sign-off authority for all product releases.</li>
+            <li>Designed and executed 5,000+ test cases across Functional, Regression, Smoke, Sanity, and UAT cycles.
+            </li>
+            <li>Logged and tracked 2,000+ defects in Azure DevOps with detailed reproduction steps and root-cause notes,
+              achieving near-zero post-release defects.</li>
+            <li>Analyzed BRDs, FRDs, and user stories to flag requirement gaps before development began.</li>
+            <li>Reviewed junior QA engineers' test cases and provided mentoring to improve team coverage quality.</li>
+            <li>Participated in client calls, product demos, and UAT sessions as QA point of contact.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">Azure DevOps</span><span class="exp-tag">Manual Testing</span>
+            <span class="exp-tag">Regression</span><span class="exp-tag">UAT</span>
+            <span class="exp-tag">Agile</span><span class="exp-tag">QA Leadership</span>
+          </div>
+        </article>
+        <article class="exp-item reveal">
+          <div class="exp-dot" aria-hidden="true"></div>
+          <div class="exp-meta"><span>Aug 2024 – Jan 2025</span> · Mumbai, MH</div>
+          <h3 class="exp-title">Digital Quality Engineer</h3>
+          <div class="exp-company">QualityKiosk Technologies Pvt. Ltd.</div>
+          <ul class="exp-bullets">
+            <li>Created comprehensive test plans, scenarios, and test cases from business requirements for digital
+              banking products.</li>
+            <li>Executed Functional, Regression, Smoke, Sanity, and UAT test cycles with full defect tracking in JIRA.
+            </li>
+            <li>Maintained test case repositories aligned with sprint-level requirement changes.</li>
+            <li>Delivered test execution reports and quality summaries to stakeholders for data-driven release
+              decisions.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">JIRA</span><span class="exp-tag">Functional Testing</span>
+            <span class="exp-tag">Fintech / Banking</span><span class="exp-tag">Regression</span>
+            <span class="exp-tag">Reporting</span>
+          </div>
+        </article>
+        <article class="exp-item reveal">
+          <div class="exp-dot" style="background:var(--accent2);box-shadow:0 0 0 3px var(--accent2)" aria-hidden="true">
+          </div>
+          <div class="exp-meta"><span>2020 – 2024</span> · Jabalpur, MP</div>
+          <h3 class="exp-title">B.Tech — Computer Science</h3>
+          <div class="exp-company">Baderia Global Institute of Engineering &amp; Management · CGPA: 8.25</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume-section" id="resume" aria-label="Resume download">
+      <div class="section-eyebrow reveal">Resume</div>
+      <h2 class="reveal">Download my<br><em>CV &amp; Resume.</em></h2>
+      <div class="resume-inner">
+
+        <!-- Resume Preview (decorative) -->
+        <div class="resume-preview reveal" aria-hidden="true">
+          <div class="resume-preview-header">
+            <span class="resume-preview-title">Kautilya_Mishra_QA_Resume.pdf</span>
+            <div class="resume-preview-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="resume-doc">
+            <div class="rdoc-name">Kautilya Mishra</div>
+            <div class="rdoc-role">Quality Analyst · Manual &amp; Functional Testing</div>
+            <div class="rdoc-contact">
+              <span class="rdoc-contact-item">kautilyamishra13@outlook.com</span>
+              <span class="rdoc-contact-item">+91 94248 60726</span>
+              <span class="rdoc-contact-item">Jabalpur, MP</span>
+              <span class="rdoc-contact-item">linkedin.com/in/kautilya-mishra</span>
+            </div>
+            <div class="rdoc-divider"></div>
+            <div class="rdoc-section-head">Experience</div>
+            <div class="rdoc-exp-item">
+              <div class="rdoc-exp-top">
+                <span class="rdoc-exp-role">Quality Analyst</span>
+                <span class="rdoc-exp-date">Jan 2025 – Jan 2026</span>
+              </div>
+              <div class="rdoc-exp-company">Logimonk Technologies · Jabalpur</div>
+              <div class="rdoc-exp-bullet">Led end-to-end QA — sole reviewer for all releases</div>
+              <div class="rdoc-exp-bullet">5,000+ test cases · 2,000+ defects · near-zero prod bugs</div>
+            </div>
+            <div class="rdoc-exp-item">
+              <div class="rdoc-exp-top">
+                <span class="rdoc-exp-role">Digital Quality Engineer</span>
+                <span class="rdoc-exp-date">Aug 2024 – Jan 2025</span>
+              </div>
+              <div class="rdoc-exp-company">QualityKiosk Technologies · Mumbai</div>
+              <div class="rdoc-exp-bullet">Test plans for digital banking products</div>
+              <div class="rdoc-exp-bullet">Full defect lifecycle in JIRA with stakeholder reports</div>
+            </div>
+            <div class="rdoc-divider" style="margin-top:0.8rem"></div>
+            <div class="rdoc-section-head">Skills</div>
+            <div class="rdoc-skills-row">
+              <span class="rdoc-skill-tag">Manual Testing</span>
+              <span class="rdoc-skill-tag">Regression</span>
+              <span class="rdoc-skill-tag">UAT</span>
+              <span class="rdoc-skill-tag">Azure DevOps</span>
+              <span class="rdoc-skill-tag">JIRA</span>
+              <span class="rdoc-skill-tag">Agile/Scrum</span>
+              <span class="rdoc-skill-tag">BRD/FRD Analysis</span>
+              <span class="rdoc-skill-tag">Defect Lifecycle</span>
+            </div>
+            <div class="rdoc-divider" style="margin-top:0.8rem"></div>
+            <div class="rdoc-section-head">Education</div>
+            <div class="rdoc-exp-top" style="margin-top:0.2rem">
+              <span class="rdoc-exp-role" style="font-size:0.7rem">B.Tech CSE · 8.25 CGPA</span>
+              <span class="rdoc-exp-date">2020 – 2024</span>
+            </div>
+            <div class="rdoc-exp-company">Baderia Global Institute · Jabalpur</div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="resume-actions reveal">
+          <div>
+            <div class="resume-actions-title">One click.<br>Full picture.</div>
+            <p class="resume-actions-desc">Download my latest resume in your preferred format, or view it directly in
+              your browser. Updated with all recent experience and certifications.</p>
+          </div>
+
+          <div class="resume-btns">
+            <a href="Kautilya_Mishra_QA_Resume.pdf" download="Kautilya_Mishra_QA_Resume.pdf" class="resume-btn"
+              aria-label="Download resume as PDF">
+              <span class="resume-btn-icon" aria-hidden="true">⬇</span>
+              <span>
+                <span class="resume-btn-label">Download</span>
+                <span class="resume-btn-text">Resume PDF — Latest Version</span>
+              </span>
+            </a>
+            <a href="Kautilya_Mishra_QA_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn"
+              aria-label="View resume in browser">
+              <span class="resume-btn-icon" aria-hidden="true">↗</span>
+              <span>
+                <span class="resume-btn-label">Open in Browser</span>
+                <span class="resume-btn-text">View PDF — Full Screen</span>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/kautilya-mishra/" target="_blank" rel="noopener noreferrer"
+              class="resume-btn" aria-label="View LinkedIn profile">
+              <span class="resume-btn-icon" aria-hidden="true">🔗</span>
+              <span>
+                <span class="resume-btn-label">LinkedIn Profile</span>
+                <span class="resume-btn-text">linkedin.com/in/kautilya-mishra</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="resume-stats-row">
+            <div class="resume-stat">
+              <div class="resume-stat-num">1.5+</div>
+              <div class="resume-stat-lbl">Years Exp.</div>
+            </div>
+            <div class="resume-stat">
+              <div class="resume-stat-num">2</div>
+              <div class="resume-stat-lbl">Companies</div>
+            </div>
+            <div class="resume-stat">
+              <div class="resume-stat-num">8.25</div>
+              <div class="resume-stat-lbl">CGPA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements" id="achievements" aria-label="Achievements">
+      <div class="section-eyebrow reveal">Achievements</div>
+      <h2 class="reveal">Numbers that<br><em>speak.</em></h2>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <div class="ach-num">2k+</div>
+          <div class="ach-label">Defects Logged</div>
+          <div class="ach-desc">Across multiple client-facing products using Azure DevOps, with detailed reproduction
+            steps and severity classification.</div>
+          <div class="ach-bg-num" aria-hidden="true">1</div>
+        </div>
+        <div class="ach-card reveal">
+          <div class="ach-num">~0</div>
+          <div class="ach-label">Post-Release Defects</div>
+          <div class="ach-desc">Strengthened regression coverage iteratively across sprints to eliminate defects from
+            reaching production.</div>
+          <div class="ach-bg-num" aria-hidden="true">2</div>
+        </div>
+        <div class="ach-card reveal">
+          <div class="ach-num">5k+</div>
+          <div class="ach-label">Test Cases Designed</div>
+          <div class="ach-desc">Covering happy paths, negative flows, edge cases, and boundary conditions across all
+            application modules.</div>
+          <div class="ach-bg-num" aria-hidden="true">3</div>
+        </div>
+        <div class="ach-card reveal">
+          <div class="ach-num">8.25</div>
+          <div class="ach-label">CGPA · B.Tech CSE</div>
+          <div class="ach-desc">Graduated with distinction in Computer Science Engineering, providing strong technical
+            foundations for QA work.</div>
+          <div class="ach-bg-num" aria-hidden="true">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <div class="section-eyebrow reveal">Contact</div>
+      <h2 class="reveal">Let's work<br><em>together.</em></h2>
+      <div class="contact-inner">
+        <div class="reveal">
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:2rem;font-size:0.95rem;">I'm actively looking for
+            new
+            QA opportunities — manual testing, functional QA, or a senior QA role where I can own the test process end
+            to
+            end. Let's talk.</p>
+          <div class="contact-links">
+            <a href="mailto:kautilyamishra13@outlook.com" class="contact-link"
+              aria-label="Send email to Kautilya Mishra">
+              <span class="contact-link-icon" aria-hidden="true">✉</span>
+              <span>
+                <span class="contact-link-label">Email</span>
+                kautilyamishra13@outlook.com
+              </span>
+            </a>
+            <a href="tel:+919424860726" class="contact-link" aria-label="Call +91 94248 60726">
+              <span class="contact-link-icon" aria-hidden="true">📞</span>
+              <span>
+                <span class="contact-link-label">Phone</span>
+                +91 94248 60726
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/kautilya-mishra/" target="_blank" rel="noopener noreferrer"
+              class="contact-link" aria-label="Visit LinkedIn profile">
+              <span class="contact-link-icon" aria-hidden="true">🔗</span>
+              <span>
+                <span class="contact-link-label">LinkedIn</span>
+                linkedin.com/in/kautilya-mishra
+              </span>
+            </a>
+            <a href="https://maps.google.com/?q=Jabalpur,Madhya+Pradesh" target="_blank" rel="noopener noreferrer"
+              class="contact-link" aria-label="View Jabalpur location on map">
+              <span class="contact-link-icon" aria-hidden="true">📍</span>
+              <span>
+                <span class="contact-link-label">Location</span>
+                Jabalpur, Madhya Pradesh
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-area reveal">
+          <form id="contactForm" action="https://formspree.io/f/mnjoykbp" method="POST" novalidate
+            aria-label="Contact form">
+            <div class="form-title">Send a message</div>
+            <input type="hidden" name="_subject" value="New message from portfolio — Kautilya Mishra">
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="Name" placeholder="Jane Smith" required autocomplete="name">
+              <small class="error" id="nameError" role="alert" aria-live="polite"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" placeholder="jane@company.com" required autocomplete="email">
+              <small class="error" id="emailError" role="alert" aria-live="polite"></small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone <span style="color:var(--muted);font-size:0.6rem;">(Optional)</span></label>
+              <input type="tel" id="phone" name="Phone" placeholder="+91 98765 43210" autocomplete="tel">
+              <small class="error" id="phoneError" role="alert" aria-live="polite"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" placeholder="Tell me about the opportunity..." required></textarea>
+              <small class="error" id="messageError" role="alert" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn" aria-busy="false">Send Message →</button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">✓ Message sent! I'll get back to
+              you soon.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ATS hidden content -->
+  <div class="sr-only" aria-hidden="true">
+    <p>Kautilya Mishra — Quality Analyst. Manual Testing, Functional Testing, Regression Testing, Smoke Testing, Sanity
+      Testing, UAT, System Testing, Test Case Design, Defect Tracking, Requirement Analysis, BRD, FRD, Agile Scrum,
+      Azure DevOps, JIRA. Worked at Logimonk Technologies and QualityKiosk Technologies. Logged 2000+ defects, created
+      5000+ test cases, near-zero post-release defects.</p>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2024 Kautilya Mishra. All Rights Reserved.</p>
+    <span id="footer-copy"></span>
+    <span>Jabalpur, Madhya Pradesh · <a
+        href="mailto:kautilyamishra13@outlook.com">kautilyamishra13@outlook.com</a></span>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Dynamic copyright year
+    document.getElementById('footer-copy').textContent =
+      '© ' + new Date().getFullYear() + ' Kautilya Mishra — Quality Analyst';
 
+    // Scroll Reveal — fixed stagger (uses CSS custom property per element)
+    const revealEls = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 80 + 'ms';
+      obs.observe(el);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Form validation
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const messageInput = document.getElementById('message');
+    const submitBtn = document.getElementById('submitBtn');
+    const formSuccess = document.getElementById('formSuccess');
+
+    function showError(input, msg, errorId) {
+      input.classList.add('error-border');
+      document.getElementById(errorId).textContent = msg;
+    }
+    function clearError(input, errorId) {
+      input.classList.remove('error-border');
+      document.getElementById(errorId).textContent = '';
+    }
+    function validateName() {
+      const v = nameInput.value.trim();
+      if (!v) { showError(nameInput, 'Name is required', 'nameError'); return false; }
+      if (v.length < 3) { showError(nameInput, 'Name must be at least 3 characters', 'nameError'); return false; }
+      if (!/^[A-Za-z '.,-]+$/.test(v)) { showError(nameInput, 'Only letters and spaces allowed', 'nameError'); return false; }
+      clearError(nameInput, 'nameError'); return true;
+    }
+    function validateEmail() {
+      const v = emailInput.value.trim();
+      if (!v) { showError(emailInput, 'Email is required', 'emailError'); return false; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) { showError(emailInput, 'Enter a valid email address', 'emailError'); return false; }
+      clearError(emailInput, 'emailError'); return true;
+    }
+    function validatePhone() {
+      const v = phoneInput.value.trim();
+      if (!v) { clearError(phoneInput, 'phoneError'); return true; }
+      if (!v.startsWith('+')) { showError(phoneInput, 'Include country code e.g. +91', 'phoneError'); return false; }
+      const digits = v.replace(/\D/g, '');
+      if (digits.length < 10) { showError(phoneInput, 'Must be at least 10 digits', 'phoneError'); return false; }
+      if (digits.length > 15) { showError(phoneInput, 'Must not exceed 15 digits', 'phoneError'); return false; }
+      clearError(phoneInput, 'phoneError'); return true;
+    }
+    function validateMessage() {
+      const v = messageInput.value.trim();
+      if (!v) { showError(messageInput, 'Message cannot be empty', 'messageError'); return false; }
+      if (v.length < 15) { showError(messageInput, 'Message must be at least 15 characters', 'messageError'); return false; }
+      clearError(messageInput, 'messageError'); return true;
+    }
+
+    nameInput.addEventListener('input', validateName);
+    emailInput.addEventListener('input', validateEmail);
+    phoneInput.addEventListener('input', validatePhone);
+    messageInput.addEventListener('input', validateMessage);
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const ok = validateName() & validateEmail() & validatePhone() & validateMessage();
+      if (!ok) return;
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
+      submitBtn.setAttribute('aria-busy', 'true');
+      try {
+        const res = await fetch(form.getAttribute('action'), {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          ['name', 'email', 'phone', 'message'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+              el.classList.remove('error-border');
+              const err = document.getElementById(id + 'Error');
+              if (err) err.textContent = '';
+            }
+          });
+          formSuccess.classList.add('show');
+          setTimeout(() => formSuccess.classList.remove('show'), 5000);
+          submitBtn.textContent = 'Send Message →';
+        } else {
+          submitBtn.textContent = 'Failed. Try again.';
+          setTimeout(() => { submitBtn.textContent = 'Send Message →'; }, 3000);
+        }
+      } catch {
+        submitBtn.textContent = 'Network error. Try again.';
+        setTimeout(() => { submitBtn.textContent = 'Send Message →'; }, 3000);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.setAttribute('aria-busy', 'false');
+      }
+    });
+  </script>
 </body>
 
 </html>
